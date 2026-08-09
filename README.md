@@ -30,10 +30,10 @@ Standart derleyici dallanmalarını (`if/else`, `switch-case`) ve ardışık tal
 
 | Tehdit Unsuru | Girdap Savunması | Nihai Sonuç |
 | :--- | :--- | :--- |
-| **Statik Analiz (Ghidra, IDA Pro)**[cite: 1] | Hiperbolik Haritalama[cite: 1] | Mantıksal akış kaybolur, harita tek bir devasa "karadelik" olarak görünür[cite: 1]. |
-| **Sembolik Yürütme (Angr, Z3)**[cite: 1] | Asimetrik Yüklemler & Bitwise Zehir[cite: 1] | İhtimal uzayı şişer (State Explosion), motor RAM tüketerek çöker[cite: 1]. |
-| **Dinamik Bellek İhlali (Stack Overflow)**[cite: 1] | JIT Tabanlı Fast-Path Klonlama[cite: 1] | Fraktal derinliğindeki özyinelemeler yığın belleği taşırmadan saf hızda işlenir[cite: 1]. |
-| **Asenkron Yarış Koşulları (Race Condition)**[cite: 1] | Thread-Safe JIT Eşzamanlaması[cite: 1] | 100+ thread aynı anda kilitleri zorlasa bile sistem stabil (Segmentation Faultsuz) kalır[cite: 1]. |
+| **Statik Analiz (Ghidra, IDA Pro)** | Hiperbolik Haritalama | Mantıksal akış kaybolur, harita tek bir devasa "karadelik" olarak görünür. |
+| **Sembolik Yürütme (Angr, Z3)** | Asimetrik Yüklemler & Bitwise Zehir | İhtimal uzayı şişer (State Explosion), motor RAM tüketerek çöker. |
+| **Dinamik Bellek İhlali (Stack Overflow)** | JIT Tabanlı Fast-Path Klonlama | Fraktal derinliğindeki özyinelemeler yığın belleği taşırmadan saf hızda işlenir. |
+| **Asenkron Yarış Koşulları (Race Condition)** | Thread-Safe JIT Eşzamanlaması | 100+ thread aynı anda kilitleri zorlasa bile sistem stabil (Segmentation Faultsuz) kalır. |
 
 ---
 
